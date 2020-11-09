@@ -1,5 +1,11 @@
 # Coronavirus Tweets NLP Text Classification
 
+## Libraries/Techniques Used
+- Pandas
+- Tensorflow 2.x
+- Numpy
+- Plotly
+
 ## [About the Dataset](https://www.kaggle.com/smid80/coronavirus-covid19-tweets)
 > ***CONTEXT*** <br>
 > This dataset contains the Tweets of users who have applied the following hashtags: #coronavirus, #coronavirusoutbreak, #coronavirusPandemic, #covid19, #covid_19<br><br>From about 17 March, the dataset also included the following additional hashtags: #epitwitter, #ihavecorona<br><br>This is the first dataset in the series, as the Data tab only displays 20 files at a time and I have been uploading files with a single day's worth of data. To ensure that all files are visible to users and no files are too large, it seems prudent to create a second dataset to split the files into manageable groups of approximately half a month. The first file also contains a file that matches country with country_code and may be useful for users.<br><br>
@@ -8,8 +14,10 @@
 
 ## Approaches Used 
 
-- ***[Embedding](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(Embedding).ipynb)***<br>Embedding is probably the most basic approach to classify text
+- ***[Embedding](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(Embedding).ipynb)***<br>Embedding is probably the most basic approach to classify text. [Wikipedia](https://en.wikipedia.org/wiki/Word_embedding) defines it as
 >[Word embedding](https://en.wikipedia.org/wiki/Word_embedding) is the collective name for a set of language modeling and feature learning techniques in natural language processing (NLP) where words or phrases from the vocabulary are mapped to vectors of real numbers. Conceptually it involves a mathematical embedding from a space with many dimensions per word to a continuous vector space with a much lower dimension.
+
+I think of it as assigning various properties to a word. The actual properties assigned are definitely unknown, but just for the sake of explanation, we'll define 3 categories, i.e., cute, funny, toxic. And then, with each word, we'll assign a vector with 3 values which tell us how cute, funny and toxic that word is. So for example, mask can be [0.5, 0.3, 0.002] and Covid might be [0.001, 0.02, 0.98] and Distancing could be [0.3, 0.45, 0.0001].<br>What it does is, that the similar words then have similar values, and the distinct words with opposite meaning will have wildly different values.<br> If the sentence majorly consists of funny/cute words then the sentence would be classified as good, otherwise bad<br>Link to the code with the explanation of each line is [here](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(Embedding).ipynb)
 
 - ***[Bi-Directional LSTM](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(LSTM).ipynb)***
 
