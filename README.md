@@ -19,9 +19,9 @@
 
 I think of it as assigning various properties to a word. The actual properties assigned are definitely unknown, but just for the sake of explanation, we'll define 3 categories, i.e., cute, funny, toxic. And then, with each word, we'll assign a vector with 3 values which tell us how cute, funny and toxic that word is. So for example, mask can be [0.5, 0.3, 0.002] and Covid might be [0.001, 0.02, 0.98] and Distancing could be [0.3, 0.45, 0.0001].<br>What it does is, that the similar words then have similar values, and the distinct words with opposite meaning will have wildly different values.<br> If the sentence majorly consists of funny/cute words then the sentence would be classified as good, otherwise bad<br>Link to the code with the explanation of each line is [here](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(Embedding).ipynb)
 
-- ***[Bi-Directional LSTM](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(LSTM).ipynb)***
+- ***[1-D Convolution](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(1D_Convolutions).ipynb)*** <br>1-D Convolution works further on the embedding matrix and passes a filter over the embedding matrix of the entire sentence, essentially extracting some essential featres from the bigger embedding matrix and condensing into a smaller matrix which is faster to train and often, more accurate.<br>Detailed code [here](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(1D_Convolutions).ipynb)
 
-- ***[1-D Convolution](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(1D_Convolutions).ipynb)***
+- ***[Bi-Directional LSTM](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(LSTM).ipynb)***
 
 - ***[BERT](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(BERT).ipynb)*** *(using ktrain)*
 
