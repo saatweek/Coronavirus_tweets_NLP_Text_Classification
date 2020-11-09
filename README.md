@@ -1,6 +1,12 @@
 # Coronavirus Tweets NLP Text Classification
 
-## Libraries/Techniques Used
+## Contents
+- [Libraries Used](#libraries-used)
+- [About the Dataset](#about-the-dataset)
+- [Approaches Used](#approaches-used)
+- [Accuracy Comparison](#accuracy-comparison)
+
+## Libraries Used
 - Pandas
 - Tensorflow 2.x
 - Numpy
@@ -24,6 +30,8 @@ I think of it as assigning various properties to a word. The actual properties a
 - ***[Bi-Directional LSTM](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(LSTM).ipynb)***
 
 - ***[BERT](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(BERT).ipynb)*** *(using ktrain)*
+
+## Accuracy Comparison
 
 ![Accuracy Comparison](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/newplot.png)
 
