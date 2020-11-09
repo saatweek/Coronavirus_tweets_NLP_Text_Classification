@@ -16,3 +16,5 @@
 - ***[1-D Convolution](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(1D_Convolutions).ipynb)***
 
 - ***[BERT](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/Corona_Tweets_Classification_(BERT).ipynb)*** *(using ktrain)*
+
+[Accuracy Comparison](https://github.com/saatweek/Coronavirus_tweets_NLP_Text_Classification/blob/master/newplot.png)
